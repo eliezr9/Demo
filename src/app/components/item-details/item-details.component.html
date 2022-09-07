@@ -1,16 +1,18 @@
-<div>
-    <img [src]="item.imageSource">
-    <h1>{{item.name}}</h1>
-    <p>
-        Description:
-        <br>
-        {{item.description}}
-    </p>
+<section>
+    <div>
+        <img [src]="item.imageSource">
+        <h1>{{item.name}}</h1>
+        <p>
+            Description:
+            <br>
+            {{item.description}}
+        </p>
+        
+        <h3>City: {{item.city}}</h3>
+        <h3>Owner Phone: {{item.phoneNumber}}</h3>
+        <h3>Publish Date: {{item.publishDate | date:'dd/MM/yyyy, h:mm a'}}</h3>
+        <h2>Price: {{item.price | shekelCurrency}}</h2>
+    </div>
     
-    <h3>City: {{item.city}}</h3>
-    <h3>Owner Phone: {{item.phoneNumber}}</h3>
-    <h3>Publish Date: {{item.publishDate | date:'dd/MM/yyyy, h:mm a'}}</h3>
-    <h2>Price: {{item.price | shekelCurrency}}</h2>
-</div>
-
-<button (click)="Purchase()">Buy me</button>
+    <button (click)="Purchase()">Buy me</button>
+</section>

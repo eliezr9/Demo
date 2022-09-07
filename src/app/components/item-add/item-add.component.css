@@ -1,7 +1,9 @@
+form{
+    text-align: center;
+}
 .error{
     color: red;
 }
-
 input.ng-valid[required]{
     background-color: lightgreen;
 }
